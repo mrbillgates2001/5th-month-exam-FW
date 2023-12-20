@@ -1,0 +1,90 @@
+@use '../base' as *;
+@import url('https://fonts.googleapis.com/css2?family=Sen&display=swap');
+
+
+.navbarr {
+    display: flex;
+    width: 100%;
+    height: 140px;
+    // border: $border;
+    background: var(--Black, #232536);
+    box-shadow: #161414;
+  }
+ 
+
+.all-posts{
+    // border: $border;
+    padding: 64px 0;
+    form{
+        width: 100%;
+        border-bottom: 1px solid #6d6e7680;
+        label{
+            width: 100%;
+            input{
+                width: 100%;
+                padding: 24px;
+                font-size: 18px;
+                outline: none;
+                border: 1px solid #6d6e7680;
+                border-radius: 2px;
+            }
+        }
+        h1{
+            font-size: 48px;
+            line-height: 64px;
+            padding: 32px 0;
+            font-family: 'Sen', sans-serif;
+            color: #232536;
+        }
+    }
+    .cards{
+
+        margin-top: 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 64px;
+        .ccard{
+            width: 100%;
+            height: 350px;
+            display: flex;
+            align-items: flex-start;
+            // border: $border;
+            gap: 36px;
+            &:hover{
+                transition: 0.4s;
+                box-shadow: 3px 3px 15px 1px rgba(0, 0, 0, 0.45);
+            }
+            &_img{
+                width: 545px;
+                height: 100%;
+                img{
+                    width: 545px;
+                    height: 100%;
+                }
+            }
+            .rassm{
+                padding: 20px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 16px;
+                span{
+                    color: #592EA9;
+                    font-size: 16px;
+                    line-height: 20px;
+                    letter-spacing: 3px;
+                    text-transform: uppercase;
+                }
+                h2{
+                    color: var(--Black, #232536);
+                    font-size: 36px;
+                }
+                p{
+                    font-size: 16px;
+                    color: #6D6E76;
+                }
+            }
+        }
+    }
+}
