@@ -397,6 +397,7 @@ header nav .navbar button:hover {
   background-image: url(../../images/posts/post-1.png);
   background-repeat: no-repeat;
   background-size: cover;
+  font-family: sen;
 }
 .hero .hero-content {
   padding: 128px 0 192px 0;
@@ -479,6 +480,11 @@ header nav .navbar button:hover {
   border: 1px solid #ffbb00;
 }
 
+.latest .post {
+  margin-top: 44px;
+  font-family: sen;
+}
+
 .Cards {
   display: flex;
   justify-content: space-between;
@@ -502,7 +508,7 @@ header nav .navbar button:hover {
   margin-left: 10px;
 }
 .Cards .card .tt span {
-  color: var(--Dark-Grey, #4C4C4C);
+  color: var(--Dark-Grey, #4c4c4c);
   font-family: "Sen", sans-serif;
   /* Label 01 */
   font-style: normal;
@@ -524,7 +530,7 @@ header nav .navbar button:hover {
   letter-spacing: -1px;
 }
 .Cards .card .tt p {
-  color: var(--Black, #4C4C4C);
+  color: var(--Black, #4c4c4c);
   font-family: "Sen", sans-serif;
   padding: 10px 10px;
   font-family: "Sen", sans-serif;
@@ -625,7 +631,7 @@ footer .footer-content .footer-right {
   gap: 24px;
 }
 footer .footer-content .footer-right svg {
-  fill: #6D6E76;
+  fill: #6d6e76;
 }
 footer .footer-content .footer-right svg:hover {
   fill: #ffbb00;
