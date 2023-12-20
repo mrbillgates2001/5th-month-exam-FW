@@ -1,6 +1,4 @@
 @use '../base' as *;
-@import url('https://fonts.googleapis.com/css2?family=Sen&display=swap');
-
 
 .navbarr {
     display: flex;
@@ -15,6 +13,7 @@
 .all-posts{
     // border: $border;
     padding: 64px 0;
+    font-family: sen;
     form{
         width: 100%;
         border-bottom: 1px solid #6d6e7680;

@@ -1,8 +1,326 @@
-@import url("https://fonts.googleapis.com/css2?family=Sen&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Inter;
+  src: url(../../fonts/Inter-Regular.ttf);
+}
+@font-face {
+  font-family: Sen;
+  src: url(../../fonts/Sen-Regular.ttf);
+}
+
+.container {
+  max-width: 1280px;
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+header {
+  background: var(--Black, #232536);
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 83px;
+}
+header nav .navbar ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+header nav .navbar ul li a {
+  color: var(--Light, #fff);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 175% */
+  padding-bottom: 10px;
+  border: 2px solid transparent;
+}
+header nav .navbar ul li a:hover {
+  color: #ffbb00;
+  transition: 0.3s;
+  border-bottom: 2px solid #ffbb00;
+  padding-bottom: 10px;
+}
+header nav .navbar button {
+  border: 1px solid black;
+  padding: 16px 48px;
+  color: var(--Black, #232536);
+  font-family: Sen;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 133.333% */
+  margin: 13px 0 11px 0;
+  cursor: pointer;
+}
+header nav .navbar button:hover {
+  background-color: #ffd050;
+  color: #000000;
+  transition: 0.3s;
+}
+
+.registration .reg-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.registration .reg-content h1 {
+  color: #232536;
+  text-align: center;
+  font-family: Sen;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 64px; /* 133.333% */
+  letter-spacing: -2px;
+  margin: 68px 0;
+}
+.registration .reg-content form {
+  display: flex;
+  flex-direction: column;
+}
+.registration .reg-content form input {
+  width: 768px;
+  height: 76px;
+  border-radius: 2px;
+  border: 1px solid rgba(109, 110, 118, 0.5);
+  font-size: 16px;
+  padding: 24px;
+  outline: none;
+  margin-bottom: 22px;
+}
+.registration .reg-content form ::-moz-placeholder {
+  color: var(--Black, #232536);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 175% */
+}
+.registration .reg-content form ::placeholder {
+  color: var(--Black, #232536);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 175% */
+}
+.registration .reg-content form #regForm {
+  width: 768px;
+  height: 64px;
+  background: var(--Yellow, #ffbb00);
+  margin: 74px 0 158px 0;
+  border: 1px solid transparent;
+}
+.registration .reg-content form #regForm:hover {
+  background-color: #ffd050;
+}
+
+footer {
+  background: var(--Black, #232536);
+}
+footer .footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 64px 0 54px 0;
+}
+footer .footer-content .footer-left p {
+  color: var(--Light, #fff);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 175% */
+  opacity: 0.7;
+}
+footer .footer-content .footer-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+footer .footer-content .footer-right svg {
+  fill: #6d6e76;
+}
+footer .footer-content .footer-right svg:hover {
+  fill: #ffbb00;
+  transition: 0.3s;
+}
+
+@font-face {
+  font-family: Inter;
+  src: url(../../fonts/Inter-Regular.ttf);
+}
+@font-face {
+  font-family: Sen;
+  src: url(../../fonts/Sen-Regular.ttf);
+}
+
+.container {
+  max-width: 1280px;
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+header {
+  background: var(--Black, #232536);
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 83px;
+}
+header nav .navbar ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+header nav .navbar ul li a {
+  color: var(--Light, #fff);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 175% */
+  padding-bottom: 10px;
+  border: 2px solid transparent;
+}
+header nav .navbar ul li a:hover {
+  color: #ffbb00;
+  transition: 0.3s;
+  border-bottom: 2px solid #ffbb00;
+  padding-bottom: 10px;
+}
+header nav .navbar button {
+  border: 1px solid black;
+  padding: 16px 48px;
+  color: var(--Black, #232536);
+  font-family: Sen;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 133.333% */
+  margin: 13px 0 11px 0;
+  cursor: pointer;
+}
+header nav .navbar button:hover {
+  background-color: #ffd050;
+  color: #000000;
+  transition: 0.3s;
+}
+
+.registration .reg-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.registration .reg-content h1 {
+  color: #232536;
+  text-align: center;
+  font-family: Sen;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 64px; /* 133.333% */
+  letter-spacing: -2px;
+  margin: 68px 0;
+}
+.registration .reg-content form input {
+  width: 768px;
+  height: 76px;
+  border-radius: 2px;
+  border: 1px solid rgba(109, 110, 118, 0.5);
+  font-size: 16px;
+  padding: 24px;
+  outline: none;
+  margin-bottom: 22px;
+}
+.registration .reg-content form ::-moz-placeholder {
+  color: var(--Black, #232536);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 175% */
+}
+.registration .reg-content form ::placeholder {
+  color: var(--Black, #232536);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 175% */
+}
+.registration .reg-content button {
+  width: 768px;
+  height: 64px;
+  flex-shrink: 0;
+  background: var(--Yellow, #ffbb00);
+  margin: 74px 0 158px 0;
+  border: 1px solid transparent;
+}
+.registration .reg-content button:hover {
+  background-color: #ffd050;
+}
+
+footer {
+  background: var(--Black, #232536);
+}
+footer .footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 64px 0 54px 0;
+}
+footer .footer-content .footer-left p {
+  color: var(--Light, #fff);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 175% */
+  opacity: 0.7;
+}
+footer .footer-content .footer-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+footer .footer-content .footer-right svg {
+  fill: #6d6e76;
+}
+footer .footer-content .footer-right svg:hover {
+  fill: #ffbb00;
+  transition: 0.3s;
 }
 
 @font-face {
@@ -324,6 +642,7 @@ footer .footer-content .footer-right svg:hover {
 
 .all-posts {
   padding: 64px 0;
+  font-family: sen;
 }
 .all-posts form {
   width: 100%;
@@ -396,8 +715,63 @@ footer .footer-content .footer-right svg:hover {
   color: #6D6E76;
 }
 
+header {
+  background: var(--Black, #232536);
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 83px;
+}
+header nav .navbar ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+header nav .navbar ul li a {
+  color: var(--Light, #fff);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 175% */
+  padding-bottom: 10px;
+  border: 2px solid transparent;
+}
+header nav .navbar ul li a:hover {
+  color: #ffbb00;
+  transition: 0.3s;
+  border-bottom: 2px solid #ffbb00;
+  padding-bottom: 10px;
+}
+header nav .navbar button {
+  border: 1px solid black;
+  padding: 16px 48px;
+  color: var(--Black, #232536);
+  font-family: Sen;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 133.333% */
+  margin: 13px 0 11px 0;
+  cursor: pointer;
+}
+header nav .navbar button:hover {
+  background-color: #ffd050;
+  color: #000000;
+  transition: 0.3s;
+}
+
 .card {
   margin-top: 50px;
+  margin-bottom: 100px;
 }
 .card img {
   width: 100%;
@@ -471,6 +845,7 @@ footer .footer-content .footer-right svg:hover {
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 ul {
